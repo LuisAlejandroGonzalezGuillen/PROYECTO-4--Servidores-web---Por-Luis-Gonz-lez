@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Características</title>
+</head>
+<body>
+    <div id="encabezado">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html" title="Página principal">Concepto</a></li>
+                <li><a href="historia.html" title="Descripción del servidor">Historia</a></li>
+                <li><a href="características.html" title="Componentes de dicho servidor">Caracteristicas</a></li>
+                <li><a href="versiones.html" title="Versiones existentes">Versiones</a></li>
+                <li><a href="requerimiento.html" title="Requicitos basicos">Requerimiento</a></li>
+                <li><a href="ventajas.html" title="Pros del server">Ventajas</a></li>
+                <li><a href="desventajas.html" title="Contras del server">Desventajas</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="areaPrincipal">
+        <div id="datos">
+            <p>NGINX tiene una arquitectura modular extensible, que facilita la extensión de recursos para aquellos que desean cambiar su código fuente. El módulo principal es responsable de manejar la conexión y, además, hay una serie de módulos para diferentes tipos de procesamiento. A continuación procedere a hablar acerca de algunos de ellos:</p>
+            <p>•BALANCEO DE CARGA: El balanceo de carga es un recurso extremadamente importante para aquellos que necesitan un sitio web con alta disponibilidad, ya que permite la distribución de solicitudes de servicio entre servidores. De esa manera, cuando hay un aumento en las solicitudes al servidor, como un aumento en el tráfico, NGINX puede dirigir el flujo a otros servidores que están en el archivo de configuración. Hay tres posibilidades para la distribución de carga en el NGINX. Puede hacerse por igual entre los servidores configurados, distribuirse al servidor que tiene pocas conexiones en este momento o es posible determinar la dirección IP de cada cliente para cada servidor específico. Cuando se utiliza el balanceo de carga y Google Analytics, es necesario hacer que el código de seguimiento pase por todos los servidores utilizados. Para eso, es necesario utilizar la función de proxy inverso para que el archivo de configuración de Analytics esté disponible.
+            De esta forma, cada vez que se realice a solicitud, se actualizarán los encabezados HTTP correspondientes.</p>
+            <p>•PROXY INVERTIDO (TAMBIÉN LLAMADO INVERSO): Antes de que nos pongamos a hablar acerca del proxy invertido o inverso, es necesario explicar brevemente qué es un proxy. En la práctica, actúa como un servidor intermediario entre las computadoras en una red y el servidor web. Se utiliza como caché de página, para ahorrar recursos de banda y acelerar la carga. El proxy inverso, por otro lado, es un servidor web que recibe solicitudes de conexión y administra lo que se requerirá en el servidor principal o verifica si la solicitud ya está disponible en caché. NGINX, por lo tanto, ofrece esta característica, que se puede configurar fácilmente en su archivo de configuración.</p>
+            <p>•STREAMING: Otra característica y la ultima que mencionare acerca del servidor NGINX, es que nos ofrece un módulo nativo para streaming. Por lo tanto, permite una serie de configuraciones sobre cómo el servidor manejará el contenido MP4 y FLV, como el tamaño del buffer utilizado, el tiempo de timeout, etc.</p>
+            </div>
+        </div>
+
+        <div class="PiePagina">
+            <p>&copy; Luis Alejandro González Guillén</p>
+        </div>
+    </body>
+</html>
